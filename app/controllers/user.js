@@ -1,4 +1,4 @@
-const bcrypt = require("bcrypt"); //untuk ngedeskripsi password yang kita masukan
+const bcrypt = require('bcryptjs'); //untuk ngedeskripsi password yang kita masukan
 const jwt = require('jsonwebtoken')
 const db = require("../models/usermodel");
 const usermodel = require("../models/usermodel");
