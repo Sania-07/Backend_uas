@@ -5,7 +5,7 @@ module.exports = function (app) {
   r.get("/", product.findAll);
   r.get("/:id", product.show);
   r.post("/", product.create);
-  r.put("/:{id}", product.update);
+  r.put("/:id", product.update);
   r.delete("/:id", product.delete);
 
   app.use("/product", r);
